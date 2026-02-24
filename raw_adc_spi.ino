@@ -18,7 +18,7 @@ struct spi_config config = {
 
 void setup() {
     Bridge.begin();
-    analogReadResolution(12); // If you delete this, it defaults to 10-bit.
+    analogReadResolution(12);
 }
 
 void loop() {
