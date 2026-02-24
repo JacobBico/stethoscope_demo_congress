@@ -12,7 +12,7 @@ spi.mode = 0b01
 
 # Constants
 MAGIC_MARKER = 0xABCD
-CSV_FILENAME = "raw_adc_a0.csv"
+CSV_FILENAME = "raw_adc_a0_sine.csv"
 
 def run_capture():
     # 1. Selection Menu
