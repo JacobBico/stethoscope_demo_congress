@@ -1,5 +1,3 @@
-
-```cpp
 // Arduino UNO Q (STM32U585, Zephyr-based core) ECG sampler with Bridge/RPC frame fetch.
 //
 // Collects analog samples from A0 at 200 Hz into a ring buffer and exposes
@@ -193,4 +191,4 @@ MsgPack::bin_t<uint8_t> ecg_get_frame() {
   }
   return out;
 }
-```
+
