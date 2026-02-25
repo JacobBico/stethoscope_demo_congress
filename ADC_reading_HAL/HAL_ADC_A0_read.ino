@@ -31,7 +31,7 @@
 
 // ── Double buffer ─────────────────────────────────────────────
 static constexpr uint32_t BAUD          = 2000000;
-static constexpr uint16_t FRAME_SAMPLES = 256;
+static constexpr uint16_t FRAME_SAMPLES = 16384;
 
 static int16_t buf[2][FRAME_SAMPLES];
 static uint8_t  write_buf = 0;
