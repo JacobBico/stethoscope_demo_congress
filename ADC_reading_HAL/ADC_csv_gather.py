@@ -18,7 +18,7 @@ import argparse
 # Must match sketch constants
 MAGIC         = 0xA55A
 MAGIC_B       = bytes([0x5A, 0xA5])   # little-endian on wire
-FRAME_SAMPLES = 512
+FRAME_SAMPLES = 16384
 BAUD          = 2_000_000
 VREF          = 3.3
 ADC_BITS      = 12
