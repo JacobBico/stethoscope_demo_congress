@@ -24,7 +24,8 @@ void setup() {
 void loop() {
     // Read the pins.
     adc_data[0] = analogRead(A0);
-
+    adc_data[1] = analogRead(A1);
+    adc_data[2] = analogRead(A2);
 
     struct spi_buf tx_buf = {.buf = adc_data, .len = 8};
     struct spi_buf_set tx_set = {.buffers = &tx_buf, .count = 1};
