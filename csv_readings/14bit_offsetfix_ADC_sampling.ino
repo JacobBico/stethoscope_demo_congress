@@ -105,7 +105,7 @@ static void adc1_init() {
     ADC1_CR |= ADC_CR_ADEN;
     for (volatile int i = 0; i < 100000; i++);
 
-    // Configure ch9, continuous, overwrite on overrun, 5-cycle sample time <- ideal but not possible without sacarafice.
+    // Configure ch9, continuous, overwrite on overrun, 5-cycle sample time <- ideal but not possible without sacrafice.
     ADC1_PCSEL  = (1UL << 9);
     ADC1_SMPR1  = (2UL << 0);   // Cycle count 2UL = 15, 3UL = 39.       
     ADC1_SQR1   = (9UL << 6);   // L=0 (1 conv), SQ1=9
@@ -114,7 +114,7 @@ static void adc1_init() {
     // Start continuous conversions
     ADC1_CR |= ADC_CR_ADSTART;
 }
-
+// Serial1 in a new update has been replaced by RPC communication, I am still uncertain if it can be used as it once was.
 // ── Setup ─────────────────────────────────────────────────────
 void setup() {
     Serial1.begin(BAUD);
